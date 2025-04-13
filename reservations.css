@@ -176,6 +176,8 @@ nav{
     width: 90%;
     justify-self: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10%;
     gap: 40px;
 }
