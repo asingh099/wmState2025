@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="ham" id="ham" onclick="openMenu()">
+        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>    
+    </div>
+    <div class="navHam" id="navHam">
+        <div class="menuLink">
+            <a href="menu.html" class="close open2">Menu</a>
+            <p class="open2" onclick="closeMenu()">X</p>
+        </div>
+        <a href="reservations.html" class="open">Reservations</a>
+        <a href="about.html" class="open">About</a>
+        <a href="process.html" class="open">Process</a>
+        <a href="#" class="open">References</a>
+    </div>
+    <div class="aboveNav">
+        <div class="logo">
+            <a href="index.html" id="indexLink">            
+                <img src="webmaster logo revised 5.png" alt="logo" id="logo" href="index.html">
+            </a>
+        </div>
+        <div class="order">
+            <span class="dot">
+                <a href="cart.html">Order Online</a>
+            </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+    <nav>
+        <a href="menu.html" class="inactive">Menu</a>
+        <a href="about.html" class="inactive">About</a>
+        <a href="process.html" class="inactive">Process</a>
+        <a href="reservations.html" class="active">Contact Us</a>
+        <a href="" class="inactive">References</a>
+    </nav>
+    <div class="reserveHeading">
+        <h1>Have a Question? We’re Here to Help</h1>
+    </div>
+    <div class="contactInfo">
+        <div class="contactInfo1 item">
+            <h2>Connect With Us</h2>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>  Location</h3>
+            <p>124 Sigma Street</p>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>  Phone</h3>
+            <p>(123)-456-7890</p>
+            <h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>  Email</h3>
+            <p>vivanatura@gmail.com</p>
+            <h3>Hours:</h3>
+            <p><strong>Breakfast</strong> 10 AM - 12 PM</p>
+            <p><strong>Lunch</strong> 12 PM - 4 PM</p>
+            <p><strong>Dinner</strong> 4 PM - 10 PM</p>
+            <p>Sunday: 10 AM - 10 PM</p>
+            <p>Monday: 12 PM - 9 PM</p>
+            <p>Tuesday: 12 PM - 9 PM</p>
+            <p>Wednesday: 12 PM - 9 PM</p>
+            <p>Thursday: 12 PM - 9 PM</p>
+            <p>Friday: 10 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 10 PM</p>
+            <h3 class="walkIns">Accept walk-ins based on availability!</h3>
+            <div class="followUs">
+                <h3>Socials</h3>
+                <div class="socialLinks">
+                    <a href="#" ><svg id="Insta" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#"><svg id="FB"fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></g></svg></a>
+                    <a href="#"><svg id="X" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                        <path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="contactInfo2 item">
+            <h2>Send Us A Message</h2>
+            <p>Use this form for general questions, comments, reservations, catering questions, or just to say hello! We'll be sure to get back to you ASAP!</p>
+            <div class="formContainer">
+                <form class="form">
+                    <label for="fName">First Name</label>
+                    <input type="text" name="fName">
+                    <label for="lName">Last Name</label>
+                    <input type="text" name="lName">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="reason">Reason</label>
+                    <input type="text" name="reason" placeholder="e.g. reservations, feedback">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message">
+                    <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+                      </svg>Send</button>
+                </form>
+            </div>
+            <h3>Sign Up For Our Newsletter</h3>
+            <p>Our "Veggie Vibes" Newsletter includes all the latest news in crop agriculture, agricultural sustainability, animal ethics advocation, and more! Join to learn about how you at home can learn to care for the environment and make our planet a heappier and healthier place. After all, we only have one chance to make this our home!</p>
+            <div class="newsLetter">
+                <form>
+                    <label for="Email">Email</label>
+                    <input type="email">
+                </form>
+            </div>
+            <div class="logo2">
+                <img src="webmaster logo revised 5.png" alt="" id="coolLogo">
+            </div>
+            </div>
+    </div>
+
+    <footer>
+        <div class="address">
+            <h2>ADDRESS</h2>
+            <p>777 Water Wheel Dr, Veggietown, PA 15622</p>
+        </div>
+        <div class="contact">
+            <h2>QUICK LINKS</h2>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="process.html">Process</a>
+            <a href="#">References</a>
+        </div>
+        <div class="hours">
+            <h2>HOURS</h2>
+            <p>Sunday: 10 AM - 10 PM</p>
+            <p>Monday: 12 PM - 9 PM</p>
+            <p>Tuesday: 12 PM - 9 PM</p>
+            <p>Wednesday: 12 PM - 9 PM</p>
+            <p>Thursday: 12 PM - 9 PM</p>
+            <p>Friday: 10 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 10 PM</p>
+        </div>
+        <div class="reservations">
+            <h2>RESERVATIONS</h2>
+            <p>Call XXX-XXX-XXXX</p>
+        </div>
+    </footer>
+</body>
+</html>
