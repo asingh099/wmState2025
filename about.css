@@ -1,0 +1,271 @@
+/*Nav*/
+body{
+    font-family: "Karla", serif;
+    background-color: #F5F5DC;
+    width: 100%;
+    margin: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-block: 2%;
+    position: relative;
+    width: 100%;
+}
+#indexLink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    width: 10%;
+}
+.aboveNav{
+    background-color: #F5F5DC;
+}
+.dot{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background-color: rgb(216, 133, 24);
+    display: block;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    right: 2vw;
+    top: 2vw;
+    font-size: clamp(0.4vw, 1.8vw, 4vw); 
+    line-height: 1; 
+    overflow: hidden; 
+    white-space: wrap; 
+}
+.order a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    max-width: 100%;
+    display: block;
+}
+nav a{
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 2vw;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vw;
+}
+nav a.inactive:hover::after{
+    position: absolute;
+    width: 100%;
+    height: 0.4vw;
+    left: 0;
+    content: "";
+    background-color: rgb(18, 135, 57);
+    transition: 1s;
+}
+a.active{
+    color: green;
+}
+nav a::after{
+    position: absolute;
+    width: 0%;
+    height: 0.4vw;
+    left: 0;
+    bottom: 2vw;
+    content: "";
+    background-color: rgb(18, 135, 57);
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+    background-color: #F5F5DC;
+}
+
+
+
+.ham svg{
+    display: none;
+}
+
+
+@media screen and (max-width: 492px) {
+    nav a{
+        display: none;
+    }
+    .ham svg{
+        position: absolute;
+        display: block;
+        z-index: 4;
+    }
+} 
+@media screen and (min-width: 493px) {
+    .navHam{
+        display: none;
+    }
+}
+/*Hambburger Menu*/
+.navHam{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 0;
+    z-index: 1;
+    opacity: 0.9;
+    transition: 1s;
+    height: 100vh;
+}
+.menuLink{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    width: 0;
+    transition: 1s;
+}
+.navHam a:hover{
+    background-color: #D32F2F;
+}
+.menuLink p{
+    width: 25%;
+    display: block;
+    text-align: center;
+}
+.menuLink a{
+    width: 75%;
+    padding-left: 0;
+}
+.menuLink p:hover{
+    background-color: #D32F2F;
+    cursor: pointer;
+}
+.menuLink a, .menuLink p{
+    text-decoration: none;
+    color: white;
+    font-size: 0;
+    height: 100%;
+    align-content: center;
+}
+.navHam a.open{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    height: 20%;
+    padding-left: 0;
+    width: calc(100%-2vw);
+}
+/*About*/
+.aboutHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25vw;
+    color: rgb(61, 45, 45);
+}
+.aboutHeading p{
+    font-size: 2vw;
+}
+.aboutHeading h1{
+    font-size: 4vw;
+} 
+*{
+    box-sizing: border-box;
+}
+/*Big Container*/
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.smallContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.story, .smallContainer{
+    width: 45%;
+    min-width: 400px;
+}
+.story{
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+}
+.story h2{
+    color: green;
+    font-size: clamp(15px, 2.5vw, 2.5vw);
+}
+.story h2, .story p{
+    margin-left: 10%;
+}
+.story p{
+    font-size: clamp(12px, 1.5vw, 1.5vw);
+    width: 80%;
+}
+.mission, .processMore{
+    background-color: white;
+    border-radius: 10px;
+    flex: 1 1 50%;
+    width: 100%;
+}
+.mission h2, .mission p{
+    margin-left: 10%;
+    width: 80%;
+}
+.mission h2{
+    font-size: clamp(15px, 2.5vw, 2.5vw);
+    color: green;
+}
+.mission p{
+    font-size: clamp(12px, 1.5vw, 1.5vw);
+}
+.processMore p, .processMore a{
+    margin-left: 10%;
+}
+.processMore p{
+    font-size: clamp(13px, 2vw, 2vw);
+    font-weight: 650;
+}
+.processMore a{
+    color: black;
+    width: 30%;
+    font-size: clamp(10px, 1.5vw, 1.5vw);
+}
+
+
+/*Team*/
+#founders{
+    text-align: center;
+}
+.team{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.member{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 250px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.member:hover{
+    transform: translateY(-2%);
+}
+.member h4{
+    color: green;
+}
+.member p{
+    width: 90%;
+}
