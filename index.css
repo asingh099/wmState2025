@@ -267,6 +267,7 @@ nav{
     width: 90%;
     background-color: white;
     justify-self: center;
+    align-self: center;
     height: 100%;
 }
 .EMtext h2{
@@ -356,5 +357,8 @@ nav{
 .review1:hover{
     transform: translateY(-2%);
 }
+
+
+
 
 
