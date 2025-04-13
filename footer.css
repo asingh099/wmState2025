@@ -7,6 +7,16 @@ footer{
     color: white;
     flex-wrap: wrap;
 }
+footer div{
+    width: 25%;
+    min-width: 100px;
+}
+.address p{
+    width: 90%;
+}
+.address p, .address h2{
+    margin-left: 5%;
+}
 footer h2{
     font-size: clamp(13px, 2vw, 2vw);
 }
