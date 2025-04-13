@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="footer.css">
+</head>
+<body onload="displayCart()">
+    <div class="ham" id="ham" onclick="openMenu()">
+        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g></svg>    
+    </div>
+    <div class="navHam" id="navHam">
+        <div class="menuLink">
+            <a href="menu.html" class="close open2">Menu</a>
+            <p class="open2" onclick="closeMenu()">X</p>
+        </div>
+        <a href="reservations.html" class="open">Reservations</a>
+        <a href="about.html" class="open">About</a>
+        <a href="process.html" class="open">Process</a>
+        <a href="#" class="open">References</a>
+    </div>
+    <div class="aboveNav">
+        <div class="logo">
+            <a href="index.html" id="indexLink">            
+                <img src="webmaster logo revised 5.png" alt="logo" id="logo" href="index.html">
+            </a>
+        </div>
+        <div class="order">
+            <span class="dot">
+                <a href="cart.html">Order Online</a>
+            </span>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+    <nav>
+        <a href="menu.html" class="inactive">Menu</a>
+        <a href="about.html" class="inactive">About</a>
+        <a href="process.html" class="inactive">Process</a>
+        <a href="reservations.html" class="inactive">Contact Us</a>
+        <a href="#" class="inactive">References</a>
+    </nav>
+    <div class="cartHeading">
+        <h1>Your Sustainable Basket</h1>
+    </div>
+    <div id="cart">
+        
+    </div>
+    <footer>
+        <div class="address">
+            <h2>ADDRESS</h2>
+            <p>777 Water Wheel Dr, Veggietown, PA 15622</p>
+        </div>
+        <div class="contact">
+            <h2>QUICK LINKS</h2>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="process.html">Process</a>
+            <a href="#">References</a>
+        </div>
+        <div class="hours">
+            <h2>HOURS</h2>
+            <p>Sunday: 10 AM - 10 PM</p>
+            <p>Monday: 12 PM - 9 PM</p>
+            <p>Tuesday: 12 PM - 9 PM</p>
+            <p>Wednesday: 12 PM - 9 PM</p>
+            <p>Thursday: 12 PM - 9 PM</p>
+            <p>Friday: 10 AM - 10 PM</p>
+            <p>Saturday: 10 AM - 10 PM</p>
+        </div>
+        <div class="reservations">
+            <h2>RESERVATIONS</h2>
+            <p>Call XXX-XXX-XXXX</p>
+        </div>
+    </footer>
+</body>
+</html>
