@@ -1,0 +1,28 @@
+/*Footer*/
+footer{
+    margin-top: 5%;
+    background-color: #D32F2F;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+}
+footer h2{
+    font-size: clamp(13px, 2vw, 2vw);
+}
+footer p, footer a{
+    font-size: clamp(10px, 1.3vw, 1.3vw);
+}
+footer a{
+    display: block;
+    color: white;
+    margin-bottom: 14px;
+}
+.fHeadings{
+    display: flex;
+    justify-content: space-evenly;
+}
+.row1{
+    display: flex;
+    justify-content: space-evenly;
+}
