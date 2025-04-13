@@ -1,0 +1,249 @@
+/*Nav*/
+body{
+    font-family: "Karla", serif;
+    background-color: #F5F5DC;
+    width: 100%;
+    margin: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-block: 2%;
+    position: relative;
+    width: 100%;
+}
+#indexLink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    width: 10%;
+}
+.aboveNav{
+    background-color: #F5F5DC;
+}
+.dot{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    background-color: rgb(216, 133, 24);
+    display: block;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    right: 2vw;
+    top: 2vw;
+    font-size: clamp(0.4vw, 1.8vw, 4vw); 
+    line-height: 1; 
+    overflow: hidden; 
+    white-space: wrap; 
+}
+.order a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    max-width: 100%;
+    display: block;
+}
+nav a{
+    position: relative;
+    font-weight: 700;
+    padding-bottom: 2vw;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vw;
+}
+nav a.inactive:hover::after{
+    position: absolute;
+    width: 100%;
+    height: 0.4vw;
+    left: 0;
+    content: "";
+    background-color: rgb(18, 135, 57);
+    transition: 1s;
+}
+a.active{
+    color: green;
+}
+nav a::after{
+    position: absolute;
+    width: 0%;
+    height: 0.4vw;
+    left: 0;
+    bottom: 2vw;
+    content: "";
+    background-color: rgb(18, 135, 57);
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+    background-color: #F5F5DC;
+}
+.ham svg{
+    display: none;
+}
+
+
+@media screen and (max-width: 492px) {
+    nav a{
+        display: none;
+    }
+    .ham svg{
+        position: absolute;
+        display: block;
+        z-index: 4;
+    }
+} 
+@media screen and (min-width: 493px) {
+    .navHam{
+        display: none;
+    }
+}
+/*Hambburger Menu*/
+.navHam{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 0;
+    z-index: 1;
+    opacity: 0.9;
+    transition: 1s;
+    height: 100vh;
+}
+.menuLink{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    width: 0;
+    transition: 1s;
+}
+.navHam a:hover{
+    background-color: #D32F2F;
+}
+.menuLink p{
+    width: 25%;
+    display: block;
+    text-align: center;
+}
+.menuLink a{
+    width: 75%;
+    padding-left: 0;
+}
+.menuLink p:hover{
+    background-color: #D32F2F;
+    cursor: pointer;
+}
+.menuLink a, .menuLink p{
+    text-decoration: none;
+    color: white;
+    font-size: 0;
+    height: 100%;
+    align-content: center;
+}
+.navHam a.open{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 0;
+    height: 20%;
+    padding-left: 0;
+    width: calc(100%-2vw);
+}
+
+/*Heading*/
+.menuHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 25vw;
+    font-size: 2vw;
+}
+
+
+/*Categories*/
+.categories{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+.categories a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 3vw;
+    margin-top: 10%;
+    width: 30vw;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding-block: 1vw;
+    border: 0.3vw solid black;
+    border-radius: 0.5vw;
+}
+
+/*Menu Homepage*/
+
+/*Lunch*/
+#lunchTitle{
+    text-align: center;
+}
+.lunchFoods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.lunchItem{
+    display: flex;
+    width: clamp(300px, 25vw, 25vw);
+    flex-direction: column;
+    margin-block: 1%;
+    text-align: center;
+    background-color: ghostwhite;
+    border-radius: 0.5vw;
+    animation: expand 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+
+.lunchItem h3{
+    font-size: clamp(13px, 1.7vw, 1.7vw);
+}
+
+.lunchItem p{
+    font-size: clamp(10px, 1.3vw, 10.3vw);
+}
+
+.addToCart{
+    width: 40%;
+    margin-inline: auto;
+    height: clamp(20px, 3vw, 3vw);
+    border: none;
+    background-color: #f1e432;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5vw;
+    margin-bottom: 5%;
+}
+.addToCart p{
+    font-size: clamp(10px, 1.1vw, 1.1vw);
+    transition-duration: 0.5s;
+}
+#cartButtonIcon{
+    height: clamp(10px, 1.1vw, 1.1vw);
+    position: absolute;
+    left: -100%;
+    transition-duration: 0.5s;
+}
+.addToCart:hover > #cartButtonIcon{
+    left: 10%;
+}
+.addToCart:hover p{
+    transform: translateX(15%);
+}
