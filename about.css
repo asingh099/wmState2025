@@ -162,14 +162,15 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 25vw;
+    height: clamp(fit-content, 25vw, 25vw);
     color: rgb(61, 45, 45);
+    text-align: center;
 }
 .aboutHeading p{
-    font-size: 2vw;
+font-size: clamp(17px, 3vw, 3vw);
 }
 .aboutHeading h1{
-    font-size: 4vw;
+    font-size: clamp(25px, 4vw, 4vw);
 } 
 *{
     box-sizing: border-box;
@@ -188,7 +189,7 @@ nav{
 }
 .story, .smallContainer{
     width: 45%;
-    min-width: 400px;
+    min-width: 200px;
 }
 .story{
     background-color: white;
