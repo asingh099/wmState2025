@@ -169,10 +169,18 @@ nav{
 *{
     box-sizing: border-box;
 }
-
+@media screen {
+    
+}
 /*Reservation Info*/
+.container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .contactInfo{
     display: flex;
+    text-align: left;
     width: 90%;
     justify-self: center;
     flex-wrap: wrap;
